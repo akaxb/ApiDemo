@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using ApiDemo.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ApiDemo.Controllers
@@ -25,7 +26,7 @@ namespace ApiDemo.Controllers
 
         // POST api/values
         [HttpPost]
-        public void Post([FromBody]string value)
+        public void Post([FromBody]AppUser user)
         {
         }
 
